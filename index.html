@@ -25,6 +25,7 @@
   .panel { display: none; }
   .panel.active { display: block; }
   .gantt-wrap { background: #fff; border-radius: 14px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); overflow-x: auto; }
+  .gantt-wrap { max-height: 75vh; overflow-y: auto; }
   .gantt-head { display: grid; grid-template-columns: 260px 90px 90px 1fr; border-bottom: 2px solid #f1f5f9; position: sticky; top: 0; background: #fff; z-index: 2; }
   .gantt-head-cell { padding: 10px 16px; font-size: 11px; font-weight: 700; color: #64748b; text-transform: uppercase; }
   .gantt-months { display: flex; padding: 10px 0; }
@@ -55,10 +56,10 @@
   .col-bar { width: 100%; background: #6366f1; border-radius: 4px 4px 0 0; opacity: 0.8; }
   .col-lbl { font-size: 10px; color: #94a3b8; }
   .full-width { grid-column: 1 / -1; }
-  .table-wrap { background: #fff; border-radius: 14px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); overflow-x: auto; }
+  .table-wrap { background: #fff; border-radius: 14px; box-shadow: 0 1px 4px rgba(0,0,0,0.07); overflow-x: auto; max-height: 75vh; overflow-y: auto; }
   table { width: 100%; border-collapse: collapse; font-size: 12px; }
   thead tr { background: #f8fafc; border-bottom: 2px solid #e2e8f0; }
-  th { padding: 10px 14px; text-align: left; font-weight: 700; color: #64748b; text-transform: uppercase; font-size: 11px; white-space: nowrap; }
+  th { padding: 10px 14px; text-align: left; font-weight: 700; color: #64748b; text-transform: uppercase; font-size: 11px; white-space: nowrap; position: sticky; top: 0; background: #f8fafc; z-index: 1; }
   tbody tr { border-bottom: 1px solid #f1f5f9; }
   tbody tr:nth-child(even) { background: #fafafa; }
   tbody tr:hover { background: #f0f4ff; }
